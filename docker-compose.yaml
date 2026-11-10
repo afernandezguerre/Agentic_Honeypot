@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: agentic_honeypot_app
+    restart: always
+    # Si tu aplicación usa variables de entorno (como keys de LLMs), descomenta la siguiente línea y crea un archivo .env
+    # env_file:
+    #   - .env
+    # Si tu script es un servicio web que expone puertos, descomenta y ajusta:
+    # ports:
+    #   - "8000:8000"
+    volumes:
+      # Opcional: si quieres montar el código para desarrollo (en producción en la nube a veces se omite para usar la imagen estática)
+      - .:/app
+      - /app/.venv # Evita sobreescribir el entorno del contenedor con el de tu máquina local

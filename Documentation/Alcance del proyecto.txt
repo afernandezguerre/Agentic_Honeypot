@@ -1,0 +1,24 @@
+El alcance de este proyecto es el siguiente:
+
+Busco crear una estructura agéntica a través de la cual, un agente procesa un prompt, y en función de si es malicioso o no
+redirige la conexión a un LLM u a otro. A nivel gráfico, el prompter malicioso nos e da cuenta, pero realmente le estamos
+cambiando a un LLM señuelo con información falsa. Esto es muy util ya que nos permite ver, si esta información se utiliza.
+
+El desarrollo se compondrá de los siguientes hitos:
+
+Configurar un LLM para que corra en local
+
+Dominio de docker --> En esta aplicación la construcción de docker esta conseguida, falta hacer que se conecte a Ollama correctamente
+                        al usar un localhost diferente al que tiene docker.
+
+Configurar el Agente (skills) en local.
+
+Fusionarlos
+
+Añadir capa de persistencia
+
+Subirlo a los ordenadores de la ETSISI
+
+Mejorar y actualizar
+
+(Posible parte opcional: Añadir un dashboard SOC que utilice esta base de datos)
