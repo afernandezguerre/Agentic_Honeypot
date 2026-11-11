@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cccbe49-352b-465a-b0f3-2f3ee8eda81b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Alcance del proyecto.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LLM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guardrail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
-        <option value="Python Script" />
         <option value="Docker Compose" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -34,23 +31,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.8694846429992071" />
-      <entry key="MS500" value="3.866431276897064" />
-      <entry key="S2" value="8.421275890827474" />
-      <entry key="S5" value="11.618825803406034" />
-      <entry key="S10" value="13.148356238343046" />
-      <entry key="S30" value="14.640198804170334" />
-      <entry key="S60" value="18.982959952024384" />
-      <entry key="M2" value="43.945650818493995" />
-      <entry key="M5" value="132.79032602279855" />
-      <entry key="M10" value="220.6169090307158" />
-      <entry key="M15" value="276.11362977079455" />
-      <entry key="M30" value="371.9635675484195" />
-      <entry key="H1" value="451.53139648266443" />
-      <entry key="H2" value="504.92226845340934" />
-      <entry key="H4" value="536.1620455505252" />
-      <entry key="D1" value="564.9231796948263" />
-      <entry key="W1" value="570.1249705810615" />
+      <entry key="MS100" value="1.5256525457450754" />
+      <entry key="MS500" value="4.86713203406051" />
+      <entry key="S2" value="8.191480336002346" />
+      <entry key="S5" value="9.635751253664898" />
+      <entry key="S10" value="10.545202168172528" />
+      <entry key="S30" value="26.898717945659342" />
+      <entry key="S60" value="70.2600168059181" />
+      <entry key="M2" value="141.46840858923474" />
+      <entry key="M5" value="276.4433191646701" />
+      <entry key="M10" value="400.0158266319548" />
+      <entry key="M15" value="474.68514640024114" />
+      <entry key="M30" value="597.5653621667109" />
+      <entry key="H1" value="696.652323283137" />
+      <entry key="H2" value="762.5838912370498" />
+      <entry key="H4" value="801.0836992473298" />
+      <entry key="D1" value="836.5139892551126" />
+      <entry key="W1" value="842.9220346779717" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -72,23 +69,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.8170177245941643" />
-      <entry key="MS500" value="3.8415510711941803" />
-      <entry key="S2" value="8.400975289164151" />
-      <entry key="S5" value="11.606230513856973" />
-      <entry key="S10" value="13.140962913887535" />
-      <entry key="S30" value="14.63742161164268" />
-      <entry key="S60" value="18.981387864003082" />
-      <entry key="M2" value="43.944375919403726" />
-      <entry key="M5" value="132.78874128951188" />
-      <entry key="M10" value="220.6154042275873" />
-      <entry key="M15" value="276.1123069654324" />
-      <entry key="M30" value="371.96263188467134" />
-      <entry key="H1" value="451.5308166142518" />
-      <entry key="H2" value="504.9219412639615" />
-      <entry key="H4" value="536.1618711011405" />
-      <entry key="D1" value="564.9231489581906" />
-      <entry key="W1" value="570.1249661472272" />
+      <entry key="MS100" value="1.504046896732867" />
+      <entry key="MS500" value="4.85263827042373" />
+      <entry key="S2" value="8.185373295245162" />
+      <entry key="S5" value="9.632856984234909" />
+      <entry key="S10" value="10.543448481717205" />
+      <entry key="S30" value="26.8951489629781" />
+      <entry key="S60" value="70.25501484959234" />
+      <entry key="M2" value="141.4636010051425" />
+      <entry key="M5" value="276.43973883181354" />
+      <entry key="M10" value="400.0131522509076" />
+      <entry key="M15" value="474.6829743982049" />
+      <entry key="M30" value="597.5639461114772" />
+      <entry key="H1" value="696.6514809348292" />
+      <entry key="H2" value="762.5834253108321" />
+      <entry key="H4" value="801.0834532143115" />
+      <entry key="D1" value="836.5139462447324" />
+      <entry key="W1" value="842.9220284818272" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -115,23 +112,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/alexfdzg05/IdeaProjects/TFG/Agentic_Honeypot/Documentation",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alexfdzg05/IdeaProjects/TFG/Agentic_Honeypot/Documentation&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="PyDebuggerOptionsProvider">
     <option name="myDebuggerBackend" value="DEBUGPY" />
   </component>
